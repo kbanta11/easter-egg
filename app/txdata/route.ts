@@ -29,13 +29,8 @@ export async function POST(
     args: [], //TODO - update for contract mint function
   });
 
-  const publicClient = createPublicClient({
-    chain: baseSepolia,
-    transport: http(),
-  });
-
   return NextResponse.json({
-    chainId: `eip155:${publicClient.chainId}`, // OP Mainnet 10
+    chainId: `eip155:84532`, // Base Sepolia TODO
     method: "eth_sendTransaction",
     params: {
       abi: easterEggABI as Abi,
