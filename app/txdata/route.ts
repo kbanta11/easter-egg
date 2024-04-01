@@ -8,7 +8,6 @@ import {
   getContract,
   http,
 } from "viem";
-import { baseSepolia, optimism } from "viem/chains";
 import { easterEggABI } from "./contracts/easter-egg";
 require('dotenv').config();
 
